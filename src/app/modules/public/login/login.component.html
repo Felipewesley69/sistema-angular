@@ -1,0 +1,29 @@
+<div class="container-fuid box">
+  <div class="card text-center">
+    <div class="card-header">
+      <span class="title">
+        Login to continue!
+      </span>
+    </div>
+    <div class="card-body box-login">
+      <form (submit)="login()" autocomplete="off"  [formGroup]="form">
+        <div class="input-group mb-3">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Username" autocomplete=off formControlName="userName">
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">#</span>
+          <input type="password" class="form-control" placeholder="Password" autocomplete=off formControlName="password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm" title="Fazer login!">Login</button>
+      </form>
+    </div>
+    <div class="card-footer text-muted box-cadastro">
+      New here? 
+      <button type="button" class="btn btn-secondary btn-sm btn-cadastro" routerLink="/cadastro">
+        Sing Up
+      </button>
+    </div>
+  </div>
+</div>
+
